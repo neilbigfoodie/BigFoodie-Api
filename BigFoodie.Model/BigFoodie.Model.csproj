@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5334E44C-383A-4AAE-BFE6-EC45BF771AA6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BigFoodie.Model</RootNamespace>
+    <AssemblyName>BigFoodie.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminAcc.cs" />
+    <Compile Include="Adv.cs" />
+    <Compile Include="Advsearch.cs" />
+    <Compile Include="AppUserInfo.cs" />
+    <Compile Include="AppUserSetting.cs" />
+    <Compile Include="AppUserToDevice.cs" />
+    <Compile Include="Blocklist.cs" />
+    <Compile Include="Cashreturn.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Commission.cs" />
+    <Compile Include="CreditCard.cs" />
+    <Compile Include="CustomerReview.cs" />
+    <Compile Include="DeliveryAddr.cs" />
+    <Compile Include="Deviceinfo.cs" />
+    <Compile Include="Favourite.cs" />
+    <Compile Include="Invitefriend.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="MemberCash.cs" />
+    <Compile Include="Menu.cs" />
+    <Compile Include="Menubasic.cs" />
+    <Compile Include="MenuBasicTemplate.cs" />
+    <Compile Include="MenuCat.cs" />
+    <Compile Include="MenuCatBasicMenu.cs" />
+    <Compile Include="Menucattemplate.cs" />
+    <Compile Include="Menuoptionalcat.cs" />
+    <Compile Include="MenuPrice.cs" />
+    <Compile Include="Menusideorder.cs" />
+    <Compile Include="MultilangMenu.cs" />
+    <Compile Include="Newshopregi.cs" />
+    <Compile Include="OnlineUser.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="Ordercomment.cs" />
+    <Compile Include="Ordercz.cs" />
+    <Compile Include="Orderdelivery.cs" />
+    <Compile Include="Orderitem.cs" />
+    <Compile Include="OrderItems.cs" />
+    <Compile Include="Ordernotice.cs" />
+    <Compile Include="Orderoperation.cs" />
+    <Compile Include="Orderpayment.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PushNoticeQueue.cs" />
+    <Compile Include="Recommend.cs" />
+    <Compile Include="RecPaidAmountInfo.cs" />
+    <Compile Include="ServiceTicket.cs" />
+    <Compile Include="Shop.cs" />
+    <Compile Include="ShopDelieveryArea.cs" />
+    <Compile Include="ShopdeliveryCost.cs" />
+    <Compile Include="Shopdiscount.cs" />
+    <Compile Include="ShopExtInfoForApp.cs" />
+    <Compile Include="ShopJz.cs" />
+    <Compile Include="ShopJzDetail.cs" />
+    <Compile Include="ShoppingCart.cs" />
+    <Compile Include="ShoppingHoliday.cs" />
+    <Compile Include="ShopTicket.cs" />
+    <Compile Include="Shoptransactiondetail.cs" />
+    <Compile Include="Shopviewtelrecord.cs" />
+    <Compile Include="Shopworktime.cs" />
+    <Compile Include="StoredProceedureReturnClasses\UpUserscoreGetModelReturnModel.cs" />
+    <Compile Include="StoredProceedureReturnClasses\GetShopByPostCodeReturnModel.cs" />
+    <Compile Include="StoredProceedureReturnClasses\SpGetMenuInfosReturnModel.cs" />
+    <Compile Include="StoredProceedureReturnClasses\SpGetPlInfoReturnModel.cs" />
+    <Compile Include="StoredProceedureReturnClasses\SpUserRegExistReturnModel.cs" />
+    <Compile Include="StoredProceedureReturnClasses\UpCreditCardGetListReturnModel.cs" />
+    <Compile Include="StoredProceedureReturnClasses\UpDeliveryAddrGetListReturnModel.cs" />
+    <Compile Include="StoredProceedureReturnClasses\UpDeliveryAddrGetModelByIdReturnModel.cs" />
+    <Compile Include="StoredProceedureReturnClasses\UpFavouritesGetModelReturnModel.cs" />
+    <Compile Include="StoredProceedureReturnClasses\UpGetUserEmailReturnModel.cs" />
+    <Compile Include="StoredProceedureReturnClasses\UpRecommendGetModelReturnModel.cs" />
+    <Compile Include="StoredProceedureReturnClasses\UpShopGetModelReturnModel.cs" />
+    <Compile Include="StoredProceedureReturnClasses\UpShoppingHolidayGetListReturnModel.cs" />
+    <Compile Include="StoredProceedureReturnClasses\UpSysMsgGetModelReturnModel.cs" />
+    <Compile Include="StoredProceedureReturnClasses\UpUserregGetInfoByUidReturnModel.cs" />
+    <Compile Include="StoredProceedureReturnClasses\UpUserregGetpwdByMailReturnModel.cs" />
+    <Compile Include="StoredProceedureReturnClasses\UpUserregGetPwdQuestionReturnModel.cs" />
+    <Compile Include="StoredProceedureReturnClasses\UpUserscoreGetListReturnModel.cs" />
+    <Compile Include="Submenu.cs" />
+    <Compile Include="Sysdiagram.cs" />
+    <Compile Include="SysLog.cs" />
+    <Compile Include="SysMsg.cs" />
+    <Compile Include="UserCreditInfo.cs" />
+    <Compile Include="UserReg.cs" />
+    <Compile Include="Userscore.cs" />
+    <Compile Include="Voucherinfo.cs" />
+    <Compile Include="VwAppUserProfile.cs" />
+    <Compile Include="VwCustomerreview.cs" />
+    <Compile Include="VwGetAppDeviceInfo.cs" />
+    <Compile Include="VwGetAppRestInfo.cs" />
+    <Compile Include="VwGetOrderInfo.cs" />
+    <Compile Include="VwGetOrderInfoForAdmin.cs" />
+    <Compile Include="VwGetOrderListForApp.cs" />
+    <Compile Include="VwGetShopInfo.cs" />
+    <Compile Include="VwGetShopInfo2.cs" />
+    <Compile Include="VwGetShopJzDetail.cs" />
+    <Compile Include="VwGetUserBalanceSummary.cs" />
+    <Compile Include="VwGetUserFavShopInfo.cs" />
+    <Compile Include="VwGetUserInfo.cs" />
+    <Compile Include="VwOrdersValid.cs" />
+    <Compile Include="VwShopOrder.cs" />
+    <Compile Include="VwShopsValid.cs" />
+    <Compile Include="VwSysMsg.cs" />
+    <Compile Include="VwUser2Device.cs" />
+    <Compile Include="VwUserBalanceSummary.cs" />
+    <Compile Include="VwValidOrder.cs" />
+    <Compile Include="VwValidShop.cs" />
+    <Compile Include="Vwviewtel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
